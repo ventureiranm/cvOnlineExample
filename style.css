@@ -207,3 +207,28 @@ form input, form textarea {
     .nav-links { display: none; }
     .hero h1 { font-size: 2.5rem; }
 }
+
+/* 1. Centrar el contenedor en la página */
+.contenedor-foto-cv {
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;     /* Centrado vertical (si el contenedor tiene altura) */
+  margin: 20px 0;          /* Espacio arriba y abajo */
+}
+
+/* 2. Estilo de la imagen */
+.foto-cv-redonda {
+  /* Tamaño apto para CV (ajusta a tu gusto entre 100px y 150px) */
+  width: 130px; 
+  height: 130px; /* Importante que sea igual a width para que sea un círculo perfecto */
+  
+  /* Hacerla redonda */
+  border-radius: 50%;
+  
+  /* Asegurar que la imagen no se estire feo si no es cuadrada */
+  object-fit: cover; 
+  
+  /* Opcional: Un borde fino sutil */
+  border: 3px solid #f1f3f4; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+}
