@@ -203,7 +203,7 @@ img {
   cursor: pointer;
   padding: 4px;
 }
-.hamburger span {
+.hamburger__bar {
   display: block;
   width: 24px;
   height: 2px;
@@ -211,9 +211,9 @@ img {
   border-radius: 2px;
   transition: transform 0.3s, opacity 0.3s;
 }
-.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.hamburger.open span:nth-child(2) { opacity: 0; }
-.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.hamburger.open .hamburger__bar--top    { transform: translateY(7px) rotate(45deg); }
+.hamburger.open .hamburger__bar--mid    { opacity: 0; }
+.hamburger.open .hamburger__bar--bottom { transform: translateY(-7px) rotate(-45deg); }
 
 /* ─────────────────────────────────────────
    HERO
@@ -507,7 +507,7 @@ img {
 .about-text {
   max-width: 700px;
 }
-.about-text p {
+.about-text__body {
   font-size: 1.05rem;
   color: var(--text-secondary);
   line-height: 1.85;
@@ -835,7 +835,7 @@ img {
   gap: 0.45rem;
   margin-bottom: 1.4rem;
 }
-.project-tech span {
+.project-tech__item {
   font-size: 0.7rem;
   padding: 0.2rem 0.65rem;
   background: var(--bg-secondary);
@@ -872,7 +872,7 @@ img {
   align-items: start;
 }
 
-.contact-info h3 {
+.contact-info__title {
   font-family: var(--font-display);
   font-size: 2rem;
   font-weight: 600;
@@ -880,7 +880,7 @@ img {
   margin-bottom: 1rem;
 }
 
-.contact-info > p {
+.contact-info__desc {
   font-size: 0.95rem;
   color: var(--text-secondary);
   line-height: 1.8;
@@ -922,7 +922,7 @@ img {
   gap: 0.5rem;
 }
 
-.form-group label {
+.form-label {
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -930,8 +930,7 @@ img {
   color: var(--text-muted);
 }
 
-.form-group input,
-.form-group textarea {
+.form-field {
   background: var(--bg-card);
   border: 1px solid var(--border-light);
   border-radius: 10px;
@@ -944,19 +943,16 @@ img {
   resize: vertical;
 }
 
-.form-group input::placeholder,
-.form-group textarea::placeholder {
+.form-field::placeholder {
   color: var(--text-muted);
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.form-field:focus {
   border-color: var(--gold);
 }
 
 /* Estado de error */
-.form-group input.error,
-.form-group textarea.error {
+.form-field.error {
   border-color: #e74c3c;
 }
 
@@ -981,7 +977,7 @@ img {
   font-size: 1.5rem;
   flex-shrink: 0;
 }
-.form-success p {
+.form-success__text {
   font-size: 0.9rem;
   color: #2ecc71;
 }
@@ -1027,13 +1023,13 @@ img {
   padding: 1rem 1.5rem;
 }
 
-.footer-disclaimer p {
+.footer-disclaimer__text {
   font-size: 0.78rem;
   color: var(--text-muted);
   line-height: 1.7;
 }
 
-.footer-disclaimer strong {
+.footer-disclaimer__highlight {
   color: rgba(255, 200, 0, 0.6);
 }
 
