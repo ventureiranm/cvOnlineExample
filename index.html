@@ -19,7 +19,9 @@
   <nav class="navbar" id="navbar">
     <div class="nav-logo">NV<span class="dot">.</span></div>
     <button class="hamburger" id="hamburger" aria-label="Abrir menú">
-      <span></span><span></span><span></span>
+      <span class="hamburger__bar hamburger__bar--top"></span>
+      <span class="hamburger__bar hamburger__bar--mid"></span>
+      <span class="hamburger__bar hamburger__bar--bottom"></span>
     </button>
     <ul class="nav-links" id="navLinks">
       <li><a href="#inicio" class="nav-link">Inicio</a></li>
@@ -108,7 +110,7 @@
           <div class="data-icon">✉️</div>
           <div class="data-info">
             <span class="data-label">Email</span>
-            <span class="data-value">n.ventureira@google.com</span>
+            <span class="data-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="107e3e66757e6465627579627150777f7f777c753e737f7d">[email&#160;protected]</a></span>
           </div>
         </div>
         <div class="data-card reveal">
@@ -122,7 +124,7 @@
 
       <!-- Sobre mí texto -->
       <div class="about-text reveal">
-        <p>
+        <p class="about-text__body">
           Me uní a Google en 2014, donde lideré el desarrollo de productos icónicos como Google Chrome y Chrome OS.
           Hoy, como líder de Google y Alphabet, me enfoco en la Inteligencia Artificial y en construir plataformas
           que mejoren la vida de miles de millones de personas.
@@ -379,7 +381,7 @@
             Lideré el equipo de investigación que desarrolló Gemini Ultra, el modelo de lenguaje más avanzado de Google. Integración multimodal de texto, imagen, audio y video con capacidades de razonamiento complejo.
           </p>
           <div class="project-tech">
-            <span>Python</span><span>TensorFlow</span><span>Google Cloud</span>
+            <span class="project-tech__item">Python</span><span class="project-tech__item">TensorFlow</span><span class="project-tech__item">Google Cloud</span>
           </div>
           <a href="#" class="project-link">Ver detalles →</a>
         </div>
@@ -392,7 +394,7 @@
             Rediseño integral de la plataforma de Machine Learning en la nube. Reducción del tiempo de entrenamiento de modelos en un 40% mediante infraestructura distribuida con Docker y orquestación automatizada en AWS.
           </p>
           <div class="project-tech">
-            <span>Docker</span><span>AWS</span><span>Kubernetes</span>
+            <span class="project-tech__item">Docker</span><span class="project-tech__item">AWS</span><span class="project-tech__item">Kubernetes</span>
           </div>
           <a href="#" class="project-link">Ver detalles →</a>
         </div>
@@ -405,7 +407,7 @@
             Iniciativa de protección contra ataques DDoS para ONGs, medios de comunicación y gobiernos. Implementación de certificados SSL avanzados, autenticación JWT y tunneling seguro sobre Linux para más de 3.000 organizaciones.
           </p>
           <div class="project-tech">
-            <span>SSL/HTTPS</span><span>JWT</span><span>Linux</span>
+            <span class="project-tech__item">SSL/HTTPS</span><span class="project-tech__item">JWT</span><span class="project-tech__item">Linux</span>
           </div>
           <a href="#" class="project-link">Ver detalles →</a>
         </div>
@@ -418,7 +420,7 @@
             Arquitectura backend de nueva generación para Google Translate usando Spring Boot y Django REST. Soporte para 200+ idiomas con modelos transformer. Base de datos MySQL distribuida con replicación multi-región.
           </p>
           <div class="project-tech">
-            <span>Java / Spring</span><span>Django</span><span>MySQL</span>
+            <span class="project-tech__item">Java / Spring</span><span class="project-tech__item">Django</span><span class="project-tech__item">MySQL</span>
           </div>
           <a href="#" class="project-link">Ver detalles →</a>
         </div>
@@ -431,7 +433,7 @@
             Programa de integración de herramientas de IA en entornos educativos K-12 y universitarios. Desarrollado con Python, implementado en 50 países y más de 100 millones de estudiantes beneficiados.
           </p>
           <div class="project-tech">
-            <span>Python</span><span>Git</span><span>Google Cloud</span>
+            <span class="project-tech__item">Python</span><span class="project-tech__item">Git</span><span class="project-tech__item">Google Cloud</span>
           </div>
           <a href="#" class="project-link">Ver detalles →</a>
         </div>
@@ -444,7 +446,7 @@
             Diseño y despliegue de la red de centros de datos de próxima generación de Google. Optimización de redes de fibra óptica submarina y protocolos de seguridad de capa física con foco en soberanía digital.
           </p>
           <div class="project-tech">
-            <span>Redes</span><span>Linux</span><span>AWS</span>
+            <span class="project-tech__item">Redes</span><span class="project-tech__item">Linux</span><span class="project-tech__item">AWS</span>
           </div>
           <a href="#" class="project-link">Ver detalles →</a>
         </div>
@@ -465,11 +467,11 @@
 
       <div class="contact-layout">
         <div class="contact-info reveal">
-          <h3>¿Hablamos?</h3>
-          <p>Estoy disponible para colaboraciones, conferencias y consultoría estratégica en tecnología e Inteligencia Artificial.</p>
+          <h3 class="contact-info__title">¿Hablamos?</h3>
+          <p class="contact-info__desc">Estoy disponible para colaboraciones, conferencias y consultoría estratégica en tecnología e Inteligencia Artificial.</p>
           <div class="contact-links">
-            <a href="mailto:n.ventureira@google.com" class="contact-link-item">
-              <span class="cl-icon">✉️</span>n.ventureira@google.com
+            <a href="/cdn-cgi/l/email-protection#3957174f5c574d4c4b5c504b58795e56565e555c175a5654" class="contact-link-item">
+              <span class="cl-icon">✉️</span><span class="__cf_email__" data-cfemail="e48aca92818a909196818d9685a4838b8b838881ca878b89">[email&#160;protected]</span>
             </a>
             <a href="tel:+16505550142" class="contact-link-item">
               <span class="cl-icon">📞</span>+1 (650) 555-0142
@@ -483,26 +485,26 @@
         <!-- Formulario -->
         <form class="contact-form reveal" id="contactForm" novalidate>
           <div class="form-group">
-            <label for="name">Nombre completo</label>
-            <input type="text" id="name" name="name" placeholder="Tu nombre completo" autocomplete="name" />
+            <label class="form-label" for="name">Nombre completo</label>
+            <input class="form-field" type="text" id="name" name="name" placeholder="Tu nombre completo" autocomplete="name" />
             <span class="form-error" id="nameError"></span>
           </div>
 
           <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="tu@email.com" autocomplete="email" />
+            <label class="form-label" for="email">Email</label>
+            <input class="form-field" type="email" id="email" name="email" placeholder="tu@email.com" autocomplete="email" />
             <span class="form-error" id="emailError"></span>
           </div>
 
           <div class="form-group">
-            <label for="phone">Teléfono</label>
-            <input type="tel" id="phone" name="phone" placeholder="+54 9 11 0000-0000" autocomplete="tel" />
+            <label class="form-label" for="phone">Teléfono</label>
+            <input class="form-field" type="tel" id="phone" name="phone" placeholder="+54 9 11 0000-0000" autocomplete="tel" />
             <span class="form-error" id="phoneError"></span>
           </div>
 
           <div class="form-group">
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+            <label class="form-label" for="message">Mensaje</label>
+            <textarea class="form-field" id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
             <span class="form-error" id="messageError"></span>
           </div>
 
@@ -514,7 +516,7 @@
           <!-- Mensaje de éxito -->
           <div class="form-success" id="formSuccess" style="display:none;">
             <span class="success-icon">✅</span>
-            <p>¡Mensaje enviado con éxito! Me comunicaré contigo en breve.</p>
+            <p class="form-success__text">¡Mensaje enviado con éxito! Me comunicaré contigo en breve.</p>
           </div>
         </form>
       </div>
@@ -531,8 +533,8 @@
         <p class="footer-name">Nicolás Manuel Ventureira</p>
         <p class="footer-copy">© 2025 · Todos los derechos reservados</p>
         <div class="footer-disclaimer">
-          <p>
-            ⚠️ <strong>Aviso académico:</strong> La información, datos personales, cargos, empresas y proyectos presentados en este CV son <strong>completamente ficticios</strong> y han sido generados con fines exclusivamente académicos y de demostración técnica. Cualquier semejanza con personas, empresas o situaciones reales es mera coincidencia.
+          <p class="footer-disclaimer__text">
+            ⚠️ <strong class="footer-disclaimer__highlight">Aviso académico:</strong> La información, datos personales, cargos, empresas y proyectos presentados en este CV son <strong class="footer-disclaimer__highlight">completamente ficticios</strong> y han sido generados con fines exclusivamente académicos y de demostración técnica. Cualquier semejanza con personas, empresas o situaciones reales es mera coincidencia.
           </p>
         </div>
       </div>
