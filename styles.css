@@ -78,11 +78,7 @@ img {
   padding: 0 2rem;
 }
 
-.gold {
-  color: var(--gold);
-}
-
-.dot {
+.accent {
   color: var(--gold);
 }
 
