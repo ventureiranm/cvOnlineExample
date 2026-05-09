@@ -42,7 +42,23 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  /* Base móvil — todos los rem escalan desde este valor */
+  font-size: 14px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  html { font-size: 15px; }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  html { font-size: 16px; }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1440px) {
+  html { font-size: 17px; }
 }
 
 body {
